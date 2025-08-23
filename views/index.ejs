@@ -3,9 +3,175 @@
     <%- include('partials/menu') %>
 
 
-        <h1>Hello, world!</h1>
+        <div class="container mt-5">
+            <form action="/users/customer-profile" method="POST">
+                <!-- SECTION 1: Company Profile -->
+                <h4 class="text-primary mb-3">🧾 Company Information</h4>
 
+                <div class="mb-3">
+                    <label class="form-label">Company Name</label>
+                    <input type="text" class="form-control" name="companyName" required>
+                </div>
 
+                <div class="mb-3">
+                    <label class="form-label">Website URL</label>
+                    <input type="url" class="form-control" name="websiteUrl">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Description</label>
+                    <textarea class="form-control" name="description" rows="2"></textarea>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label class="form-label">Industry</label>
+                        <input type="text" class="form-control" name="industry">
+                    </div>
+                    <div class="col">
+                        <label class="form-label">Target Market</label>
+                        <input type="text" class="form-control" name="targetMarket">
+                    </div>
+                </div>
+
+                <h5 class="mt-4">Social Media</h5>
+                <input type="text" class="form-control mb-2" name="socialLinks[facebook]"
+                    placeholder="Facebook Page URL">
+                <input type="text" class="form-control mb-2" name="socialLinks[instagram]"
+                    placeholder="Instagram Handle">
+                <input type="text" class="form-control mb-2" name="socialLinks[linkedin]" placeholder="LinkedIn URL">
+
+                <h5 class="mt-4">Ad Accounts</h5>
+                <input type="text" class="form-control mb-2" name="adAccounts[metaBusinessManagerId]"
+                    placeholder="Meta Business Manager ID">
+                <input type="text" class="form-control mb-2" name="adAccounts[googleAdsCustomerId]"
+                    placeholder="Google Ads Customer ID">
+                <input type="text" class="form-control mb-2" name="adAccounts[googleAnalyticsId]"
+                    placeholder="Google Analytics ID">
+
+                <h5 class="mt-4">Contact Person</h5>
+                <input type="text" class="form-control mb-2" name="contactPerson[name]" placeholder="Name">
+                <input type="email" class="form-control mb-2" name="contactPerson[email]" placeholder="Email">
+                <input type="text" class="form-control mb-3" name="contactPerson[phone]" placeholder="Phone">
+
+                <!-- SECTION 2: Strategy Form -->
+                <h4 class="text-success mt-5 mb-3">📈 Marketing Strategy Questions</h4>
+
+                <div class="mb-3">
+                    <label class="form-label">1. Total active sales period on your website?</label>
+                    <input type="text" class="form-control" name="strategy[activeSalesPeriod]">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">2. How many digital marketing companies have you worked with?</label>
+                    <input type="text" class="form-control" name="strategy[previousAgenciesCount]">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">3. Have you run ads before? Which platforms?</label>
+                    <input type="text" class="form-control" name="strategy[adPlatformsUsed]">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">4. How often are new products/collections uploaded?</label>
+                    <input type="text" class="form-control" name="strategy[uploadFrequency]">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">5. Months with the best sales?</label>
+                    <input type="text" class="form-control" name="strategy[bestSalesMonths]">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">6. High-season and low-season details (if any)?</label>
+                    <textarea class="form-control" name="strategy[seasonDetails]" rows="2"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">7. Top 3 regions with most sales (online + in-store)?</label>
+                    <input type="text" class="form-control" name="strategy[topSalesRegions]">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">8. Where do you want to sell more (countries/cities)?</label>
+                    <input type="text" class="form-control" name="strategy[targetRegions]">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">9. Do you use discount coupons?</label>
+                    <select class="form-select" name="strategy[usesDiscountCoupons]">
+                        <option value="">Select</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">10. Is email marketing actively used?</label>
+                    <select class="form-select" name="strategy[emailMarketing]">
+                        <option value="">Select</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">11. Have bot followers been purchased on Instagram?</label>
+                    <select class="form-select" name="strategy[botFollowersInstagram]">
+                        <option value="">Select</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        <option value="not_sure">Not Sure</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">12. Do you follow competitor and market price research?</label>
+                    <select class="form-select" name="strategy[competitorResearch]">
+                        <option value="">Select</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">13. List at least 3 competitors:</label>
+                    <input type="text" class="form-control" name="strategy[competitors]">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">14. List at least 2 industry leaders:</label>
+                    <input type="text" class="form-control" name="strategy[industryLeaders]">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">15. Price comparison with competitors?</label>
+                    <select class="form-select" name="strategy[priceComparison]">
+                        <option value="">Select</option>
+                        <option value="cheaper">More affordable</option>
+                        <option value="similar">About the same</option>
+                        <option value="expensive">More expensive</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">16. Estimated monthly ad budget?</label>
+                    <input type="text" class="form-control" name="strategy[monthlyAdBudget]">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">17. Known website issues?</label>
+                    <textarea class="form-control" name="strategy[knownWebsiteIssues]" rows="3"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">18. Admin panel login (for analytics reports):</label>
+                    <textarea class="form-control" name="strategy[adminAccessInfo]" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-success mt-4">Submit</button>
+            </form>
+        </div>
 
 
         <%- include('partials/footer') %>
