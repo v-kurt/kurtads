@@ -1,0 +1,88 @@
+Great — here’s a **Funnel Diagnostic Checklist (Health Scorecard)** you can use step by step to identify where the leak is happening.
+
+---
+
+# 📊 Funnel Health Scorecard
+
+### 🔹 **1. Audience & Targeting**
+
+✅ Are you retargeting high-intent users (e.g., cart abandoners, product viewers)?
+✅ Are you excluding irrelevant/low-intent audiences (homepage bouncers, bots)?
+✅ Are your audiences large enough (at least a few thousand for retargeting)?
+
+**Score (1–5):** \_\_\_
+
+---
+
+### 🔹 **2. Ad Messaging**
+
+✅ Does the ad headline & image clearly state the offer/product?
+✅ Does the ad promise match exactly what the landing page delivers?
+✅ Is the CTA clear (“Shop Now”, “Get 20% Off Today”)?
+
+**Score (1–5):** \_\_\_
+
+---
+
+### 🔹 **3. Landing Page Experience**
+
+✅ Page loads in under 3 seconds (test with GTmetrix or PageSpeed)?
+✅ Mobile-friendly layout and easy navigation?
+✅ Product benefits are clear in first 5 seconds?
+✅ Trust signals present (reviews, policies, guarantees)?
+✅ Call-to-action is visible without scrolling?
+
+**Score (1–5):** \_\_\_
+
+---
+
+### 🔹 **4. Checkout Flow**
+
+✅ Can a customer check out in 3 steps or less?
+✅ Multiple payment options (credit, PayPal, Apple/Google Pay)?
+✅ No forced account creation?
+✅ Shipping costs/times are transparent before checkout?
+
+**Score (1–5):** \_\_\_
+
+---
+
+### 🔹 **5. Tracking & Analytics**
+
+✅ Pixel/conversion tracking correctly set for purchases?
+✅ Do you know where most drop-offs happen (product page, cart, checkout)?
+✅ UTM tags or campaign IDs are set to track ad-to-purchase path?
+
+**Score (1–5):** \_\_\_
+
+---
+
+### 🔹 **6. Offer & Incentives**
+
+✅ Is the offer compelling (price, discount, free shipping, bundle)?
+✅ Do you use urgency/scarcity (limited time, low stock)?
+✅ Have you tested different offers vs. just ads?
+
+**Score (1–5):** \_\_\_
+
+---
+
+### 🔹 **7. Retargeting Strategy**
+
+✅ Do you have dynamic product retargeting (showing exact items viewed)?
+✅ Do you segment audiences by intent (view, cart, checkout)?
+✅ Do you refresh creatives often (avoid ad fatigue)?
+
+**Score (1–5):** \_\_\_
+
+---
+
+# 🏆 Interpreting the Score
+
+* **28–35 points:** Funnel is healthy; focus on scaling.
+* **20–27 points:** Moderate leaks; prioritize fixing weakest area.
+* **Below 20 points:** Major funnel breakdown; likely landing page or checkout is the blocker.
+
+---
+
+Do you want me to also make this into a **fillable template (Excel/Google Sheet style)** so you or your team can score each funnel regularly?
